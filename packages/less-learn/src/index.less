@@ -1,0 +1,50 @@
+// .box {
+//   display: block;
+
+//   &>.header {
+//     display: block;
+
+//     &>.title {
+//       display: block;
+//     }
+//   }
+
+//   &>.content {
+//     display: block;
+//   }
+
+// }
+
+.box {
+  display: block;
+
+  .aheader{
+    display: block;
+  }
+
+  &__header {
+    display: block;
+  }
+
+  &__content {
+    display: block;
+
+    &--active {
+      color: red;
+    }
+
+  }
+
+  &__title {
+    font-size: 14px;
+  }
+
+}
+
+.box-card {
+  display: block;
+
+  &__header {
+    display: block;
+  }
+}
