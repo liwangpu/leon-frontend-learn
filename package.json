@@ -2,6 +2,7 @@
   "name": "root",
   "private": true,
   "scripts": {
+    "start:react-exploration": "lerna run --scope react-exploration start",
     "start:typescript-learn": "lerna run --scope typescript-learn start",
     "start:less-learn": "lerna run --scope less-learn start"
   },
