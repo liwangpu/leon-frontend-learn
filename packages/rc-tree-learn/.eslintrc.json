@@ -1,0 +1,10 @@
+{
+  "root": true,
+  "ignorePatterns": [
+    "*.scss",
+    "*.less",
+    "*.css",
+    "*.tsx",
+    "*.ts"
+  ]
+}
