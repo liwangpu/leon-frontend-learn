@@ -2,10 +2,11 @@ import React, { Suspense } from 'react';
 import * as ReactDOM from 'react-dom/client';
 import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom';
 import './index.scss';
+import "rc-tree/assets/index.css";
 import App from './components/App';
 
-const Home = React.lazy(() => import(/* webpackPrefetch:true */'./pages/Home'));
-const Test = React.lazy(() => import(/* webpackPrefetch:true */'./pages/Test'));
+const Home = React.lazy(() => import('./pages/Home'));
+const Test = React.lazy(() => import('./pages/Test'));
 
 function WrapperSuspense(WrappedComponent: React.ComponentType) {
   return (

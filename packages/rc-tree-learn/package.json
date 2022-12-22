@@ -9,7 +9,8 @@
     "react-scripts": "5.0.1",
     "mobx": "^6.6.2",
     "mobx-react-lite": "^3.4.0",
-    "@faker-js/faker": "^7.5.0"
+    "@faker-js/faker": "^7.5.0",
+    "rc-tree": "^5.7.2"
   },
   "devDependencies": {
     "@types/node": "^16.18.2",
