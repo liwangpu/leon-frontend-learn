@@ -1,0 +1,17 @@
+{
+  "name": "babel-learn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel src --out-dir ../../dist/babel-learn"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/cli": "^7.20.7",
+    "@babel/preset-env": "^7.20.2"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
