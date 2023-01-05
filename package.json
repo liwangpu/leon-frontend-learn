@@ -5,7 +5,8 @@
     "start:react-exploration": "lerna run --scope react-exploration start",
     "start:typescript-learn": "lerna run --scope typescript-learn start",
     "start:less-learn": "lerna run --scope less-learn start",
-    "start:babel-learn": "lerna run --scope babel-learn start"
+    "start:babel-learn": "lerna run --scope babel-learn start",
+    "start:rc-tree-learn": "lerna run --scope rc-tree-learn start"
   },
   "workspaces": [
     "packages/*"
