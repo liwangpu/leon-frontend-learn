@@ -4,12 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "babel src --out-dir ../../dist/babel-learn"
+    "start": "babel src --out-dir ../../dist/babel-learn --extensions \".ts,.tsx\""
   },
   "devDependencies": {
     "@babel/core": "^7.20.12",
     "@babel/cli": "^7.20.7",
-    "@babel/preset-env": "^7.20.2"
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-typescript": "^7.21.4"
   },
   "keywords": [],
   "author": "",

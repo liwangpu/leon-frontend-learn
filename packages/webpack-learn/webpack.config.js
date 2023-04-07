@@ -12,15 +12,19 @@ module.exports = (env) => {
       path: path.resolve(__dirname, '../../dist/webpack-learn'),
       clean: true,
     },
+    // target: ['web', 'es5'],
     module: {
       rules: [
         {
-          test: /\.ts$/,
-          exclude: /(node_modules|bower_components)/,
+          test: /\.(?:js|mjs|cjs|ts|tsx)$/,
+          exclude: /node_modules/,
           use: {
             loader: 'babel-loader',
             options: {
-              presets: ['@babel/preset-env']
+              presets: [
+                "@babel/preset-typescript",
+                ['@babel/preset-env', { targets: "defaults" }],
+              ]
             }
           }
         }
