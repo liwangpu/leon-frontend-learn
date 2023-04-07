@@ -8,7 +8,8 @@
     "start:babel-learn": "lerna run --scope babel-learn start",
     "start:rc-tree-learn": "lerna run --scope rc-tree-learn start",
     "start:webpack-learn": "lerna run --scope webpack-learn start",
-    "test:typescript-learn": "nodemon --watch dist/typescript-learn dist/typescript-learn/index.js"
+    "test:typescript-learn": "nodemon --watch dist/typescript-learn dist/typescript-learn/index.js",
+    "test:webpack-learn": "nodemon --watch dist/webpack-learn dist/webpack-learn/index.js"
   },
   "workspaces": [
     "packages/*"

@@ -1,4 +1,8 @@
-// import * as aa from './a.svg';
 
-let aa: number = 1;
-console.log(`title:`, aa);
+function load(boxFile) {
+  const m = import(`./box/${boxFile}`);
+  console.log(`m:`, m);
+}
+
+
+load('a');
