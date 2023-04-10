@@ -1,10 +1,12 @@
 {
   "compilerOptions": {
-    "noImplicitAny": true,
     "module": "es6",
-    "target": "es5",
+    "target": "ES2015",
     "allowJs": true,
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "strict": false,
+    "noImplicitAny": false,
+    "allowSyntheticDefaultImports": true
   },
   "include": [
     "src/**/*"
