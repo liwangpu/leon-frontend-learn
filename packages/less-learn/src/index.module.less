@@ -1,11 +1,11 @@
 .box {
   display: block;
 
-  &>:global(.item) {
+  &>:local(.nav) {
     display: block;
-
-    &.aaa{
-      background-color: pink;
-    }
   }
+}
+
+.nav {
+  color: red;
 }
