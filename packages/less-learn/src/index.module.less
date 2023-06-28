@@ -1,11 +1,15 @@
-.box {
+.nav {
   display: block;
 
-  &>:local(.nav) {
-    display: block;
-  }
-}
+  &--actived{
+    color: orange;
 
-.nav {
-  color: red;
+    &>.nav__title{
+      font-weight: 500;
+    }
+  }
+
+  &__title {
+    font-size: 14px;
+  }
 }

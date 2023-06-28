@@ -29,7 +29,9 @@ module.exports = {
             options: {
               sourceMap: false,
               modules: {
-                localIdentName: "[local]--[hash:base64:5]",
+                // localIdentName: "[local]--[hash:base64:5]",
+                // 学习项目为了直观一些,就不加hash
+                localIdentName: "[local]",
               },
             }
           },
