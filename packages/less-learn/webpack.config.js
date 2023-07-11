@@ -33,7 +33,7 @@ module.exports = {
               modules: {
                 // localIdentName: "[local]--[hash:base64:5]",
                 // 学习项目为了直观一些,就不加hash,但是不加又分不出:gloabl()效果,所以可以直接写出固定值
-                localIdentName: "[local]--HASH",
+                localIdentName: "[local]--xxx",
                 // 下面这种是不加hash的
                 // localIdentName: "[local]",
               },
