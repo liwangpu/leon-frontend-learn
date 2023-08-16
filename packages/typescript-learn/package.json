@@ -4,11 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack --watch"
+    "start": "webpack serve"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "query-string": "^8.1.0"
+  },
   "devDependencies": {
     "nodemon": "^2.0.19",
     "webpack": "^5.74.0",
