@@ -10,6 +10,8 @@ module.exports = (env) => {
     output: {
       path: path.resolve(__dirname, '../../dist/webpack-learn'),
       clean: true,
+      library: 'MyLibrary',
+      libraryTarget: 'amd',
     },
     module: {
       rules: [
