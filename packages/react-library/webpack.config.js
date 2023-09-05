@@ -1,5 +1,4 @@
 const path = require('path');
-const { EsbuildPlugin } = require('esbuild-loader')
 
 module.exports = (env) => {
   return {
@@ -13,18 +12,26 @@ module.exports = (env) => {
       clean: true,
       library: {
         // name: 'MyLibrary',
-        type: 'module',
-        // libraryTarget: "umd",
+        type: 'commonjs',
+        // libraryTarget: "commonjs",
         // export: 'default',
       },
     },
-    // optimization: {
-    //   minimizer: [
-    //     new EsbuildPlugin({
-    //       target: 'es2015'  // Syntax to transpile to (see options below for possible values)
-    //     })
-    //   ]
-    // },
+    externals: {
+      lodash: 'lodash',
+    },
+    optimization: {
+      usedExports: true,
+      splitChunks: {
+        cacheGroups: {
+          venders: {
+            chunks: 'all',
+            test: /[\\/]node_modules[\\/]/,
+            name: 'vendors'
+          }
+        }
+      }
+    },
     module: {
       rules: [
         {
@@ -32,15 +39,6 @@ module.exports = (env) => {
           exclude: /node_modules/,
           loader: "babel-loader",
         },
-        // {
-        //   // Match `.js`, `.jsx`, `.ts` or `.tsx` files
-        //   test: /\.[jt]sx?$/,
-        //   loader: 'esbuild-loader',
-        //   options: {
-        //     // JavaScript version to compile to
-        //     target: 'es2015'
-        //   }
-        // },
       ],
     },
     resolve: {

@@ -1,0 +1,23 @@
+{
+  "name": "esbuild-learn",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "蒲立望60263 <liwang.pu@going-link.com>",
+  "homepage": "https://github.com/liwangpu/leon-frontend-learn#readme",
+  "license": "ISC",
+  "main": "lib/esbuild-learn.js",
+  "type": "module",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "node ./build.js"
+  },
+  "devDependencies": {
+    "esbuild": "^0.19.2"
+  }
+}
