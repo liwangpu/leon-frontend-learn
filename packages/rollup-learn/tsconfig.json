@@ -4,23 +4,24 @@
     "allowJs": false,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "strict": true,
+    "strict": false,
     "rootDir": ".",
+    "baseUrl": ".",
+    "declarationDir": "types",
     "sourceMap": true,
-    "declaration": false,
+    "declaration": true,
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "importHelpers": true,
-    "target": "es6",
-    "module": "CommonJS",
+    "target": "esnext",
+    "module": "esnext",
     "lib": [
       "es2017",
       "dom"
     ],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
-    "baseUrl": "."
   },
   "include": [
     "lib/**/*"

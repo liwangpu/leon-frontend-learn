@@ -1,22 +1,30 @@
-import resolve from '@rollup/plugin-node-resolve';
-import babel from '@rollup/plugin-babel';
-const path = require('path');
-const rollupTypescript = require('@rollup/plugin-typescript');
+import path from 'node:path';
+import typescript from 'rollup-plugin-typescript2'
+import sourcemaps from 'rollup-plugin-sourcemaps';
+import del from 'rollup-plugin-delete';
 
-console.log(`title:`, typeof babel);
+const outputDir = path.resolve(__dirname, '../../dist/rollup-learn');
+console.log(`outputDir:`, outputDir);
 
-export default [
-  {
-    input: 'lib/main.ts',
-    output: {
-      // file: 'bundle.js',
-      dir: path.resolve(__dirname, '../../dist/rollup-learn'),
-      format: 'cjs'
-    },
-    plugins: [
-      // resolve(),
-      // babel.babel({ babelHelpers: 'bundled' })
-      rollupTypescript()
-    ]
-  }
-];
+export default {
+  // input: generateInputs(),
+  input: `./lib/index.ts`,
+  output: {
+    dir: `${outputDir}/lib`,
+    format: 'esm',
+    sourcemap: true,
+    preserveModules: true,
+  },
+  plugins: [
+    del({ targets: outputDir, force: true }),
+    // resolve(),
+    // babel.babel({ babelHelpers: 'bundled' })
+    typescript({
+      // declarationDir: 'types',
+      declaration: false,
+      // rollupCommonJSResolveHack: true,
+      // useTsconfigDeclarationDir: true,
+    }),
+    sourcemaps(),
+  ]
+};
