@@ -1,0 +1,24 @@
+{
+  "name": "rollup-learn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup --config rollup.config.js",
+    "start": "node rollup.watch.js"
+  },
+  "dependencies": {
+    "rollup": "^4.27.4"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^12.1.1",
+    "rollup-plugin-dts": "^6.1.1",
+    "typescript": "^5.7.2",
+    "tslib": "^2.8.1",
+    "@web/dev-server": "^0.4.6",
+    "concurrently": "^9.1.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
